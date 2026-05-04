@@ -26,7 +26,7 @@ export function HomePage() {
           <p className="text-sm text-gray-600">Custom hooks in src/hooks/</p>
         </div>
           </div>
-          
+          <h3>add a new code for test the ci/ cd pipeline</h3>
     </div>
   );
 }

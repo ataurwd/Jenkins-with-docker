@@ -1,4 +1,11 @@
+import { useState } from "react";
+
 export function HomePage() {
+  const [count, setCount] = useState(0)
+  // make a counter that increments by 1 every time the button is clicked
+  const incrementCount = () => {
+    setCount(count + 1)
+  }
   return (
     <div className="space-y-6">
       <div className="bg-white rounded-lg shadow p-6">
@@ -25,7 +32,12 @@ export function HomePage() {
           <h3 className="font-semibold text-gray-900 mb-2">Hooks</h3>
           <p className="text-sm text-gray-600">Custom hooks in src/hooks/</p>
         </div>
-          </div>
+      </div>
+      <button onClick={incrementCount} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Increment Count
+      </button>
+      <p className="text-lg font-semibold text-gray-900">Count: {setCount}</p>
+
     </div>
   );
 }

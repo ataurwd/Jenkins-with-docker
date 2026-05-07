@@ -36,7 +36,7 @@ export function HomePage() {
       <button onClick={incrementCount} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
         Increment Count
       </button>
-      <p className="text-lg font-semibold text-gray-900">Count: {setCount}</p>
+      <p className="text-lg font-semibold text-gray-900">Count: {count}</p>
 
     </div>
   );
